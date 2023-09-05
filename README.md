@@ -5,6 +5,7 @@
       API: https://site.financialmodelingprep.com/
 
 2) Se extraen los datos financieros de 10 empresas
+   
     • American Airlines Group Inc. "AAL"
 
     • Apple Inc "AAPL"
