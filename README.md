@@ -27,3 +27,9 @@
 
 
 3) Se crea una conexión a Redshift para posterior carga de los datos extraidos.
+
+# Entrega 2
+
+1) Se crea tabla en Redshift
+
+2) Cargar los datos leídos de la API en la tabla.
