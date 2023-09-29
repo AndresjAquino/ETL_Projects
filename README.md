@@ -34,3 +34,7 @@
 1) Se crea tabla en Redshift
 
 2) Cargar los datos leídos de la API en la tabla.
+
+# Entrega 3
+
+1) El scrip de la entrega anterior corre en un container de Docker y en un DAG de Apache Airflow
