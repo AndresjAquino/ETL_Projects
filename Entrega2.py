@@ -1,29 +1,29 @@
 from fmp_python.fmp import FMP
 import json
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from decouple import config
-import psycopg2
 import pandas as pd
 
-# API key
-fmp = FMP(api_key='a6f7a1b79e3bdcf8cff1abd40b8105cd')
+# Configuración
+API_KEY = 'a6f7a1b79e3bdcf8cff1abd40b8105cd'
+SYMBOLS = ['AAL', 'AAPL', 'GOOGL', 'AMZN', 'MSFT', 'TSLA', 'META', 'NVDA', 'JPM', 'GS']
 
-# símbolos de empresas
-symbols = ['AAL','AAPL','GOOGL','AMZN','MSFT','TSLA','META','NVDA','JPM','GS']
+# Función para obtener datos de una empresa y almacenarlos en el diccionario
+def obtener_datos_empresa(api, symbol):
+    data = api.get_quote(symbol)
+    print(f'{symbol}: {data}')
+    return data[0]
 
-# diccionario para almacenar datos de las empresas
+# Diccionario para almacenar datos de las empresas
 empresa_data = {}
 
-# iteraración de la lista de símbolos para obtener los datos de cada empresa
-for symbol in symbols:
-    data = fmp.get_quote(symbol)
-    print(f'Datos de {symbol}: {data}')
-    
-    # se agregan los datos al diccionario
-    empresa_data[symbol] = data[0] #data[0] para traer el primer elemento de la lista
+# Obtener y almacenar datos de cada empresa
+fmp = FMP(api_key=API_KEY)
+for symbol in SYMBOLS:
+    empresa_data[symbol] = obtener_datos_empresa(fmp, symbol)
 
-# se guarda en un archivo json
-with open('empresa_data.json','w') as json_file:
+# Guardar datos en un archivo JSON
+with open('empresa_data.json', 'w') as json_file:
     json.dump(empresa_data, json_file)
 
 # Leer json y cargar en un DataFrame
@@ -32,9 +32,7 @@ with open('empresa_data.json', 'r') as json_file:
 
 # Convertir el diccionario en un DataFrame
 df = pd.DataFrame.from_dict(empresa_data).T  # Transponer el DataFrame
-
-# symbol como índice del DataFrame
-df.set_index('symbol', inplace=True)
+df.index.name = 'symbol'  # Cambiar el nombre del índice
 
 # Columnas deseadas
 columnas = [
@@ -57,9 +55,9 @@ database_name = config('DB_NAME')
 url = f'postgresql://{username}:{password}@{host}:{port}/{database_name}'
 
 # Conexión a la base de datos
-conn = create_engine(url)
+conn = create_engine(url, pool_pre_ping=True)
 
-# Exporto el DataFrame a la base de datos
+# Exportar el DataFrame a la base de datos
 df.to_sql('empresa_data', conn, if_exists='replace', index=False)
 
 # Cierro la conexión a la base de datos
