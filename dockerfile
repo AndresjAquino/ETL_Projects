@@ -2,7 +2,11 @@
 FROM python:3.8
 
 # Instalo dependencias necesarias
-RUN pip install fmp-python sqlalchemy decouple pandas psycopg2-binary
+RUN pip install fmp-python 
+RUN pip install sqlalchemy 
+RUN pip install decouple 
+RUN pip install pandas 
+RUN pip install psycopg2-binary
 
 # Directorio de trabajo en /app
 WORKDIR /app
