@@ -38,6 +38,7 @@
 # Entrega 3
 
 1) Se entrega un dockerfile para crear una imagen y un contenedor
+   
        # Pasos para correrlo
 
        Bash
