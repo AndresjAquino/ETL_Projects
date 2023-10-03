@@ -6,7 +6,6 @@ RUN pip install requests
 RUN pip install pandas 
 RUN pip install sqlalchemy==1.4.49 
 RUN pip install python-decouple
-RUN pip install decouple
 RUN pip install psycopg2-binary
 
 # Directorio de trabajo en /app
