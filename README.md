@@ -33,8 +33,12 @@
 
 1) Se crea tabla en Redshift
 
-2) Cargar los datos leídos de la API en la tabla.
+3) Cargar los datos leídos de la API en la tabla.
 
 # Entrega 3
 
-1) El scrip de la entrega anterior corre en un container de Docker y en un DAG de Apache Airflow
+1) Se entrega un dockerfile para crear una imagen y un contenedor
+
+3) Se entrega un DAG de Apache Airflow utilizando PythonOperator
+
+       Ejecuta 3 tareas: obtener_datos >> guardar_json >> exportar_bd
