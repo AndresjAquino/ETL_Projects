@@ -38,7 +38,22 @@
 # Entrega 3
 
 1) Se entrega un dockerfile para crear una imagen y un contenedor
+       # Pasos para correrlo
+
+       Bash
+   
+       docker build -t entrega3 . # Construcción imagen
+   
+       docker run entrega3 # Corre el contenedor a partir de la imagen
 
 3) Se entrega un DAG de Apache Airflow utilizando PythonOperator
 
-       Ejecuta 3 tareas: obtener_datos >> guardar_json >> exportar_bd
+       # Pasos para correrlo
+   
+       Bash
+   
+       docker-compose up
+   
+       # orden de ejecución de las tareas
+       
+       obtener_datos >> guardar_json >> exportar_bd
