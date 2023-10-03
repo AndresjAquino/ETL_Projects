@@ -7,6 +7,7 @@ RUN pip install pandas
 RUN pip install sqlalchemy==1.4.49 
 RUN pip install python-decouple
 RUN pip install psycopg2-binary
+RUN pip install apache-airflow
 
 # Directorio de trabajo en /app
 WORKDIR /app
