@@ -39,7 +39,9 @@
 
 1) Se entrega un dockerfile para crear una imagen y un contenedor
    
+
    Archivo con nombre "dockerfile"
+
 
    Pasos para correrlo
 
