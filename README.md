@@ -67,7 +67,7 @@
         dag = DAG(
         'cargar_datos_empresas',
         default_args=default_args,
-        schedule_interval=None,  # Programar la ejecución según tus necesidades
+        schedule_interval=None, 
         dag_id='Dag_Entrega3',
         description= '',
         start_date=datetime(2023,10,1,2),
