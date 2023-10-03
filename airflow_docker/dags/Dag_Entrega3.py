@@ -6,6 +6,23 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 
+# Definir el DAG
+default_args = {
+    'owner': 'AndresAquino',
+    'start_date': datetime(2023, 10, 2),
+    'retries': 1,
+}
+
+dag = DAG(
+    'cargar_datos_empresas',
+    default_args=default_args,
+    schedule_interval=None,  # Programar la ejecución según tus necesidades
+    dag_id='Dag_Entrega3',
+    description= '',
+    start_date=datetime(2023,10,1,2),
+    schedule_interval='@daily'
+)
+
 # Lista de tickers que deseas consultar
 tickers = ['AAL', 'AAPL', 'GOOGL', 'AMZN', 'MSFT', 'TSLA', 'META', 'NVDA', 'JPM', 'GS']
 api_key = 'a6f7a1b79e3bdcf8cff1abd40b8105cd'
@@ -45,22 +62,7 @@ def exportar_a_base_de_datos():
     result_df.to_sql('datos_empresas', engine, schema='andresjaquino_coderhouse', if_exists='replace', index=False)
     engine.dispose()
 
-# Definir el DAG
-default_args = {
-    'owner': 'AndresAquino',
-    'start_date': datetime(2023, 10, 2),
-    'retries': 1,
-}
 
-dag = DAG(
-    'cargar_datos_empresas',
-    default_args=default_args,
-    schedule_interval=None,  # Programar la ejecución según tus necesidades
-    dag_id='Dag_Entrega3',
-    description= '',
-    start_date=datetime(2023,10,1,2),
-    schedule_interval='@daily'
-)
 
 # Tareas del DAG
 obtener_datos = PythonOperator(
