@@ -39,7 +39,9 @@
 
 1) Se entrega un dockerfile para crear una imagen y un contenedor
    
-       # Pasos para correrlo
+   Archivo con nombre "dockerfile"
+
+   Pasos para correrlo
 
        Bash
    
@@ -49,12 +51,14 @@
 
 3) Se entrega un DAG de Apache Airflow utilizando PythonOperator
 
-       # Pasos para correrlo
+   Archivo Dag con nombre "Dag_Entrega3", en carpeta airflow_docker/dags
+
+   Pasos para correrlo
    
        Bash
    
        docker-compose up
    
-       # orden de ejecución de las tareas
+   orden de ejecución de las tareas
        
        obtener_datos >> guardar_json >> exportar_bd
