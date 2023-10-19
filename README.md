@@ -92,7 +92,7 @@
               dag=dag,
               )
 
-**2. Se adjunta captura de pantalla de las alertas y del proceso en Airflow.**
+**2. Se adjunta captura de pantalla de las alertas y del proceso en Airflow. Se dejan en la carpeta screenshot**
 
    - Gmail
      
