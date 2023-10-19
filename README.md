@@ -73,6 +73,31 @@
 
 # Entrega 4
 
-**1. Incorporación de código que envía alertas mediante SMTP.**
+**1. Se incorpora al proyecto el envío de alertas mediante SMTP.**
 
-**2. Adjuntar una captura de pantalla de las alertas enviadas por correo electrónico.**
+   - En el archivo Dag_Entrega4.py, ubicado en la carpeta de dags:
+
+   - Se importa el operador EmailOperator
+
+         from airflow.operators.email import EmailOperator
+ 
+   - Se incorpora la Tarea email_task
+
+         # alerta por correo electrónico
+         email_task = EmailOperator(
+              task_id='send_email',
+              to="andresjaquino@gmail.com",
+              subject= "Datos de empresas",
+              html_content="""<h3>Proceso de carga de datos se ha completado con éxito.</h3>""",
+              dag=dag,
+              )
+
+**2. Se adjunta captura de pantalla de las alertas y del proceso en Airflow.**
+
+   - Gmail
+     
+   - DGAs
+
+   - Grid
+
+   - Graph
