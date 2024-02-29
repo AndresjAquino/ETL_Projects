@@ -33,7 +33,6 @@
 **Creación de Dockerfile para crear una imagen y un contenedor.**
 
    > - Archivo con nombre "dockerfile".
-
    > - Pasos para ejecutarlo:
 
      ```bash
@@ -45,9 +44,8 @@
 
 > 1. Entrega de un DAG de Apache Airflow utilizando PythonOperator.**
 
-   - Archivo DAG con nombre "Dag_Entrega3", ubicado en la carpeta `airflow_docker/dags`.
-
-   - Parámetros:
+   > - Archivo DAG con nombre "Dag_Entrega3", ubicado en la carpeta `airflow_docker/dags`.
+   > - Parámetros:
 
      ```python
      # Definir el DAG
@@ -68,13 +66,13 @@
      )
      ```
 
-   - Pasos para ejecutarlo:
+   > - Pasos para ejecutarlo:
 
      ```bash
      docker-compose up
      ```
 
-   - Orden de ejecución de las tareas: `obtener_datos >> guardar_json >> exportar_bd`
+   > - Orden de ejecución de las tareas: `obtener_datos >> guardar_json >> exportar_bd`
 
 > 2. Se incorpora al proyecto el envío de alertas mediante SMTP.**
 
