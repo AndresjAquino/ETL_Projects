@@ -98,10 +98,14 @@
 
 **2. Se adjunta captura de pantalla de las alertas y del proceso en Airflow. Se dejan en la carpeta screenshot**
 
-   - Gmail
-     
-![DGAs](https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/DAGs.png)https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/DAGs.png)
+**Control de los procesos**
 
-   - Grid
+![DGAs](https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/DAGs.png)
 
-   - Graph
+![Grid](https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/Graph.png)
+
+![Graph](https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/Grid.png)
+
+**Recepción alarma de proceso completado exitosamente**
+
+![Gmail](https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/gmail.png)
