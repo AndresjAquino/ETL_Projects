@@ -42,7 +42,7 @@
 
 # ETAPA 5: AUTOMATIZACIÓN DE PROCESO
 
-> 1. Entrega de un DAG de Apache Airflow utilizando PythonOperator.**
+**1. Entrega de un DAG de Apache Airflow utilizando PythonOperator.**
 
    > - Archivo DAG con nombre "Dag_Entrega3", ubicado en la carpeta `airflow_docker/dags`.
    > - Parámetros:
@@ -74,15 +74,14 @@
 
    > - Orden de ejecución de las tareas: `obtener_datos >> guardar_json >> exportar_bd`
 
-> 2. Se incorpora al proyecto el envío de alertas mediante SMTP.**
+**2. Se incorpora al proyecto el envío de alertas mediante SMTP.**
 
-   - En el archivo Dag_Entrega4.py, ubicado en la carpeta de dags:
-
-   - Se importa el operador EmailOperator
+  > - En el archivo Dag_Entrega4.py, ubicado en la carpeta de dags:
+  > - Se importa el operador EmailOperator
 
          from airflow.operators.email import EmailOperator
  
-   - Se incorpora la Tarea email_task
+  > - Se incorpora la Tarea email_task
 
          # alerta por correo electrónico
          email_task = EmailOperator(
