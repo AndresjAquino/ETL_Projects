@@ -100,7 +100,7 @@
 
    - Gmail
      
-![DGAs](Datos_Financieros_Empresas/screenshot/DAGs.png)
+![DGAs](https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/DAGs.png)https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/DAGs.png)
 
    - Grid
 
