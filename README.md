@@ -2,7 +2,7 @@
 
 **1. Desarrollo de un script para extraer datos de una API pública.**
 
-> API de la cúal extrae los datos: [https://site.financialmodelingprep.com/]
+ - API de la cúal extrae los datos: [https://site.financialmodelingprep.com/]
 
 **2. Extracción de datos financieros de 10 empresas:**
 
@@ -32,8 +32,8 @@
 
 **Creación de Dockerfile para crear una imagen y un contenedor.**
 
-   > - Archivo con nombre "dockerfile".
-   > - Pasos para ejecutarlo:
+   - Archivo con nombre "dockerfile".
+   - Pasos para ejecutarlo:
 
      ```bash
      docker build -t entrega3 . # Construcción de la imagen
@@ -44,8 +44,9 @@
 
 **1. Entrega de un DAG de Apache Airflow utilizando PythonOperator.**
 
-   > - Archivo DAG con nombre "Dag_Entrega3", ubicado en la carpeta `airflow_docker/dags`.
-   > - Parámetros:
+   - Archivo DAG con nombre "Dag_Entrega3", ubicado en la carpeta `airflow_docker/dags`.
+  
+   - Parámetros:
 
      ```python
      # Definir el DAG
@@ -66,22 +67,23 @@
      )
      ```
 
-   > - Pasos para ejecutarlo:
+   - Pasos para ejecutarlo:
 
      ```bash
      docker-compose up
      ```
 
-   > - Orden de ejecución de las tareas: `obtener_datos >> guardar_json >> exportar_bd`
+   - Orden de ejecución de las tareas: `obtener_datos >> guardar_json >> exportar_bd`
 
 **2. Se incorpora al proyecto el envío de alertas mediante SMTP.**
 
-  > - En el archivo Dag_Entrega4.py, ubicado en la carpeta de dags:
-  > - Se importa el operador EmailOperator
+  - En el archivo Dag_Entrega4.py, ubicado en la carpeta de dags:
+  
+  - Se importa el operador EmailOperator
 
          from airflow.operators.email import EmailOperator
  
-  > - Se incorpora la Tarea email_task
+  - Se incorpora la Tarea email_task
 
          # alerta por correo electrónico
          email_task = EmailOperator(
