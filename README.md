@@ -42,9 +42,9 @@
 
 # ETAPA 5: AUTOMATIZACIÓN DE PROCESO
 
-**1. Entrega de un DAG de Apache Airflow utilizando PythonOperator.**
+**1. Creación de un DAG de Apache Airflow utilizando PythonOperator.**
 
-   - Archivo DAG con nombre "Dag_Entrega3", ubicado en la carpeta `airflow_docker/dags`.
+   - Archivo DAG ubicado en carpeta `airflow_docker/dags`.
   
    - Parámetros:
 
@@ -73,7 +73,9 @@
      docker-compose up
      ```
 
-   - Orden de ejecución de las tareas: `obtener_datos >> guardar_json >> exportar_bd`
+   - Orden de ejecución de las tareas:
+
+        `obtener_datos >> guardar_json >> exportar_bd`
 
 **2. Se incorpora al proyecto el envío de alertas mediante SMTP.**
 
