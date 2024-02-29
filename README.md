@@ -1,21 +1,21 @@
 # ETAPA 1: EXTRACCIÓN DE DATOS
 
-> 1. Desarrollo de un script para extraer datos de una API pública.**
+## 1. Desarrollo de un script para extraer datos de una API pública.**
 
-      API de la cúal extrae los datos: [https://site.financialmodelingprep.com/]
+API de la cúal extrae los datos: [https://site.financialmodelingprep.com/]
 
-> 2. Extracción de datos financieros de 10 empresas:**
+## 2. Extracción de datos financieros de 10 empresas:**
 
-      - American Airlines Group Inc. "AAL"
-      - Apple Inc "AAPL"
-      - Alphabet Inc "GOOGL"
-      - Amazon.com, Inc. "AMZN"
-      - Microsoft Corporation "MSFT"
-      - Tesla, Inc "TSLA"
-      - Meta Platforms, Inc. "META"
-      - NVIDIA Corporation "NVDA"
-      - JPMorgan Chase & Co. "JPM"
-      - The Goldman Sachs Group, Inc. "GS"
+   - American Airlines Group Inc. "AAL"
+   - Apple Inc "AAPL"
+   - Alphabet Inc "GOOGL"
+   - Amazon.com, Inc. "AMZN"
+   - Microsoft Corporation "MSFT"
+   - Tesla, Inc "TSLA"
+   - Meta Platforms, Inc. "META"
+   - NVIDIA Corporation "NVDA"
+   - JPMorgan Chase & Co. "JPM"
+   - The Goldman Sachs Group, Inc. "GS"
 
 # ETAPA 2: TRANSFORMACIÓN DE DATOS
 
