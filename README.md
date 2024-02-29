@@ -1,10 +1,10 @@
-# Entrega 1
+# ETAPA 1: EXTRACCIÓN DE DATOS
 
-**1. Desarrollo de un script para extraer datos de una API pública.**
+> 1. Desarrollo de un script para extraer datos de una API pública.**
 
-   API: [https://site.financialmodelingprep.com/]
+   API de la cúal extrae los datos: [https://site.financialmodelingprep.com/]
 
-**2. Extracción de datos financieros de 10 empresas:**
+> 2. Extracción de datos financieros de 10 empresas:**
 
    - American Airlines Group Inc. "AAL"
    - Apple Inc "AAPL"
@@ -17,17 +17,18 @@
    - JPMorgan Chase & Co. "JPM"
    - The Goldman Sachs Group, Inc. "GS"
 
-**3. Creación de una conexión a Redshift para la carga posterior de los datos extraídos.**
+# ETAPA 2: TRANSFORMACIÓN DE DATOS
 
-# Entrega 2
 
-**1. Creación de una tabla en Redshift.**
+# ETAPA 3: CARGA DE DATOS
 
-**2. Carga de los datos leídos de la API en la tabla.**
+> 1. Creación de una conexión a Redshift para la carga posterior de los datos extraídos.**
+> 2. Creación de una tabla en Redshift.**
+> 3. Carga de los datos leídos de la API en la tabla.**
 
-# Entrega 3
+# ETAPA 4: CONTENEDOR
 
-**1. Entrega de un Dockerfile para crear una imagen y un contenedor.**
+Creación de Dockerfile para crear una imagen y un contenedor.**
 
    - Archivo con nombre "dockerfile".
 
@@ -38,7 +39,9 @@
      docker run entrega3 # Ejecución del contenedor a partir de la imagen
      ```
 
-**2. Entrega de un DAG de Apache Airflow utilizando PythonOperator.**
+# ETAPA 5: AUTOMATIZACIÓN DE PROCESO
+
+> 1. Entrega de un DAG de Apache Airflow utilizando PythonOperator.**
 
    - Archivo DAG con nombre "Dag_Entrega3", ubicado en la carpeta `airflow_docker/dags`.
 
@@ -71,9 +74,7 @@
 
    - Orden de ejecución de las tareas: `obtener_datos >> guardar_json >> exportar_bd`
 
-# Entrega 4
-
-**1. Se incorpora al proyecto el envío de alertas mediante SMTP.**
+> 2. Se incorpora al proyecto el envío de alertas mediante SMTP.**
 
    - En el archivo Dag_Entrega4.py, ubicado en la carpeta de dags:
 
