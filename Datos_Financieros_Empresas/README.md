@@ -100,7 +100,7 @@
 
    - Gmail
      
-   - DGAs
+![DGAs](Datos_Financieros_Empresas/screenshot/DAGs.png)
 
    - Grid
 
