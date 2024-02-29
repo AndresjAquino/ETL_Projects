@@ -98,7 +98,7 @@
 
 **2. Se adjunta captura de pantalla de las alertas y del proceso en Airflow. Se dejan en la carpeta screenshot**
 
-**Control de los procesos**
+**Control de los procesos en DAGs**
 
 ![DGAs](https://github.com/AndresjAquino/ETL_Projects/blob/main/Datos_Financieros_Empresas/screenshot/DAGs.png)
 
