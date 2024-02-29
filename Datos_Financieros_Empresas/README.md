@@ -36,8 +36,8 @@
    - Pasos para ejecutarlo:
 
      ```bash
-     docker build -t entrega3 . # Construcción de la imagen
-     docker run entrega3 # Ejecución del contenedor a partir de la imagen
+     docker build -t etapa3 . # Construcción de la imagen
+     docker run etapa3 # Ejecución del contenedor a partir de la imagen
      ```
 
 # ETAPA 5: AUTOMATIZACIÓN DE PROCESO
@@ -60,7 +60,7 @@
          'cargar_datos_empresas',
          default_args=default_args,
          schedule_interval=None, 
-         dag_id='Dag_Entrega3',
+         dag_id='Dag_Etapa3',
          description='',
          start_date=datetime(2023, 10, 1, 2),
          schedule_interval='@daily'
@@ -79,7 +79,7 @@
 
 **2. Se incorpora al proyecto el envío de alertas mediante SMTP.**
 
-  - En el archivo Dag_Entrega4.py, ubicado en la carpeta de dags:
+  - En el archivo Dag_Etapa_5-2.py, ubicado en la carpeta de dags:
   
   - Se importa el operador EmailOperator
 
@@ -96,7 +96,7 @@
               dag=dag,
               )
 
-**2. Se adjunta captura de pantalla de las alertas y del proceso en Airflow. Se dejan en la carpeta screenshot**
+**2. Captura de pantalla del proceso en Airflow y la recepción de alertas.**
 
 **Control de los procesos en DAGs**
 
