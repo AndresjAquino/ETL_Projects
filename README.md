@@ -2,7 +2,7 @@
 
 **1. Desarrollo de un script para extraer datos de una API pública.**
 
-API de la cúal extrae los datos: [https://site.financialmodelingprep.com/]
+> API de la cúal extrae los datos: [https://site.financialmodelingprep.com/]
 
 **2. Extracción de datos financieros de 10 empresas:**
 
@@ -22,17 +22,19 @@ API de la cúal extrae los datos: [https://site.financialmodelingprep.com/]
 
 # ETAPA 3: CARGA DE DATOS
 
-> 1. Creación de una conexión a Redshift para la carga posterior de los datos extraídos.**
-> 2. Creación de una tabla en Redshift.**
-> 3. Carga de los datos leídos de la API en la tabla.**
+**1. Creación de una conexión a Redshift para la carga posterior de los datos extraídos.**
+
+**2. Creación de una tabla en Redshift.**
+
+**3. Carga de los datos leídos de la API en la tabla.**
 
 # ETAPA 4: CONTENEDOR
 
-Creación de Dockerfile para crear una imagen y un contenedor.**
+**Creación de Dockerfile para crear una imagen y un contenedor.**
 
-   - Archivo con nombre "dockerfile".
+   > - Archivo con nombre "dockerfile".
 
-   - Pasos para ejecutarlo:
+   > - Pasos para ejecutarlo:
 
      ```bash
      docker build -t entrega3 . # Construcción de la imagen
