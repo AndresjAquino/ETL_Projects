@@ -1,4 +1,4 @@
-# ETAPA 1: EXTRACCIÓN DE DATOS
+# ETAPA 1: EXTRACCIÓN DE DATOS 📤
 
 **1. Desarrollo de un script para extraer datos de una API pública.**
 
@@ -20,7 +20,7 @@
 # ETAPA 2: TRANSFORMACIÓN DE DATOS
 
 
-# ETAPA 3: CARGA DE DATOS
+# ETAPA 3: CARGA DE DATOS 📥
 
 **1. Creación de una conexión a Redshift para la carga posterior de los datos extraídos.**
 
@@ -40,7 +40,7 @@
      docker run etapa3 # Ejecución del contenedor a partir de la imagen
      ```
 
-# ETAPA 5: AUTOMATIZACIÓN DE PROCESO
+# ETAPA 5: AUTOMATIZACIÓN DE PROCESO 🔃
 
 **1. Creación de un DAG de Apache Airflow utilizando PythonOperator.**
 
