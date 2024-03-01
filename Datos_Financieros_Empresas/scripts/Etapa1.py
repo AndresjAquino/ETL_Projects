@@ -1,17 +1,16 @@
+# I M P O R T A C I Ó N    D E    L I B R E R I A S
 from fmp_python.fmp import FMP
 import json
 from sqlalchemy import create_engine
 from decouple import config
 
+# E X T R A C C I Ó N    D E    D A T O S
 # API key
 fmp = FMP(api_key='a6f7a1b79e3bdcf8cff1abd40b8105cd')
-
 # símbolos de empresas
 symbols = ['AAL','AAPL','GOOGL','AMZN','MSFT','TSLA','META','NVDA','JPM','GS']
-
 # diccionario para almacenar datos de las empresas
 empresa_data = {}
-
 # iteraración de la lista de símbolos para obtener los datos de cada empresa
 for symbol in symbols:
     data = fmp.get_quote(symbol)
