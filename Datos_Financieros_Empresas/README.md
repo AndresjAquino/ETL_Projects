@@ -17,7 +17,7 @@
    > - JPMorgan Chase & Co. "JPM"
    > - The Goldman Sachs Group, Inc. "GS"
 
-# ETAPA 2: TRANSFORMACIÓN DE DATOS
+# ETAPA 2: TRANSFORMACIÓN DE DATOS ⚙
 
 
 # ETAPA 3: CARGA DE DATOS 📥
@@ -28,7 +28,7 @@
 
 **3. Carga de los datos leídos de la API en la tabla.**
 
-# ETAPA 4: CONTENEDOR
+# ETAPA 4: CONTENEDOR 📦
 
 **Creación de Dockerfile para crear una imagen y un contenedor.**
 
